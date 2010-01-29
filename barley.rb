@@ -24,6 +24,9 @@
 # featured in
 #   http://jmettraux.wordpress.com/2010/01/29/barley/
 
+require File.dirname(__FILE__) + '/vendor/gems/environment'
+Bundler.require_env
+
 
 require 'rubygems'
 
