@@ -54,7 +54,8 @@ require 'ruote/part/storage_participant'
 require 'ruote/storage/fs_storage'
 
 ENGINE = Ruote::Engine.new(
-  Ruote::Worker.new(Ruote::FsStorage.new('ruote_data')))
+  #Ruote::Worker.new(Ruote::FsStorage.new('ruote_data')))
+  Ruote::Worker.new(Ruote::HashStorage.new))
 
 
 #
