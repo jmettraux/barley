@@ -37,7 +37,8 @@ USERS = {
   'kenneth' => 'http://www.gravatar.com/avatar/8e033d0007374b14f6c213ede64d470b',
   'torsten' => 'http://www.gravatar.com/avatar/3fa5d7edd1f21da184964146e062c8da',
   'postmodern' => 'http://a3.twimg.com/profile_images/261097869/postmodern_bigger.jpg',
-  'amedeo' => 'http://a1.twimg.com/profile_images/99817242/me_bigger.png'
+  'amedeo' => 'http://a1.twimg.com/profile_images/99817242/me_bigger.png',
+  'radlepunktde' => 'http://a1.twimg.com/profile_images/303265014/radlepunktde_bigger.jpg'
 }
 
 
