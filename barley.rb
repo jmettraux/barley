@@ -24,8 +24,11 @@
 # featured in
 #   http://jmettraux.wordpress.com/2010/01/29/barley/
 
-require File.dirname(__FILE__) + '/vendor/gems/environment'
-Bundler.require_env
+begin
+  require File.dirname(__FILE__) + '/vendor/gems/environment'
+  Bundler.require_env
+rescue LoadError
+end
 
 
 require 'rubygems'
@@ -172,6 +175,11 @@ post '/work' do
   sleep 0.5
 
   redirect '/work'
+end
+
+get '/favicon.ico' do
+  response.status = '404'
+  'not found'
 end
 
 __END__
