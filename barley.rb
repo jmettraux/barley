@@ -188,7 +188,7 @@ __END__
 
     %script( src='http://code.jquery.com/jquery-1.4.1.min.js' )
 
-    %link( href='http://gist.github.com/raw/286506/13f8e0a14ccef2ffa3345223e1fc6f3f2582206f/reset.css' type='text/css' rel='stylesheet' )
+    %link( href='http://barley.s3.amazonaws.com/reset.css' type='text/css' rel='stylesheet' )
     %link( href='http://ruote.rubyforge.org/images/ruote.png' type='image/png' rel='icon' )
 
     %style
