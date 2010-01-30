@@ -36,9 +36,9 @@ require 'rubygems'
 
 USERS = {
   '_none_' => 'http://s.twimg.com/a/1264550348/images/default_profile_0_normal.png',
-  'john' => 'http://www.gravatar.com/avatar/8d96626e52beb1ff90f57a8e189e1e6f',
-  'kenneth' => 'http://www.gravatar.com/avatar/8e033d0007374b14f6c213ede64d470b',
-  'torsten' => 'http://www.gravatar.com/avatar/3fa5d7edd1f21da184964146e062c8da',
+  'john' => 'http://a3.twimg.com/profile_images/64795775/edelweiss_normal.jpg',
+  'kenneth' => 'http://a3.twimg.com/profile_images/519320695/twitterProfilePhoto_bigger.jpg',
+  'torsten' => 'http://www.gravatar.com/avatar/3fa5d7edd1f21da184964146e062c8da?s=48&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-48.png',
   'postmodern' => 'http://a3.twimg.com/profile_images/261097869/postmodern_bigger.jpg',
   'amedeo' => 'http://a1.twimg.com/profile_images/99817242/me_bigger.png',
   'radlepunktde' => 'http://a1.twimg.com/profile_images/303265014/radlepunktde_bigger.jpg'
