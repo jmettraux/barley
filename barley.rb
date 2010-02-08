@@ -58,7 +58,9 @@ require 'ruote/part/storage_participant'
 #require 'ruote/storage/fs_storage'
 require 'ruote/dm/storage'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://my.db')
+DataMapper.setup(
+  :default, ENV['DATABASE_URL'] || 'postgres://localhost/ruote_test')
+
 DataMapper.repository(:default) do
   #Ruote::Dm::Document.all.destroy!
   Ruote::Dm::Document.auto_upgrade!
