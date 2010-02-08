@@ -53,6 +53,9 @@ USERS = {
 #
 
 require 'yajl'
+require 'rufus-json'
+Rufus::Json.backend = :yajl
+
 require 'ruote'
 require 'ruote/part/storage_participant'
 #require 'ruote/storage/fs_storage'
