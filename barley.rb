@@ -52,6 +52,7 @@ USERS = {
 # the workflow engine
 #
 
+require 'yajl'
 require 'ruote'
 require 'ruote/part/storage_participant'
 #require 'ruote/storage/fs_storage'
