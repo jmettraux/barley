@@ -54,11 +54,19 @@ USERS = {
 
 require 'ruote'
 require 'ruote/part/storage_participant'
-require 'ruote/storage/fs_storage'
+#require 'ruote/storage/fs_storage'
+require 'ruote/dm/storage'
+
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://my.db')
+DataMapper.repository(:default) do
+  #Ruote::Dm::Document.all.destroy!
+  Ruote::Dm::Document.auto_upgrade!
+end
 
 ENGINE = Ruote::Engine.new(
   #Ruote::Worker.new(Ruote::FsStorage.new('ruote_data')))
-  Ruote::Worker.new(Ruote::HashStorage.new))
+  #Ruote::Worker.new(Ruote::HashStorage.new))
+  Ruote::Worker.new(Ruote::Dm::DmStorage.new))
 
 
 #
