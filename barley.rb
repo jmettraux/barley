@@ -126,7 +126,7 @@ end
 
 def parm (key, default)
   v = params[key] || default
-  v.length > 0 : v ? default
+  v.length > 0 ? v : default
 end
 
 set :haml, { :format => :html5 }
