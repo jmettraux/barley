@@ -167,7 +167,7 @@ post '/new' do
       PDEF,
       'next' => n,
       'subject' => subject,
-      'task' => params['task'],
+      'task' => task,
       'last' => Ruote.now_to_utc_s)
   end
 
