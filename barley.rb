@@ -124,6 +124,11 @@ def sort (workitems)
   end
 end
 
+def parm (key, default)
+  v = params[key] || default
+  v.length > 0 : v ? default
+end
+
 set :haml, { :format => :html5 }
 
 get '/' do
@@ -154,11 +159,14 @@ end
 
 post '/new' do
 
-  if n = params['next']
+  subject = params['subject']
+  task = parm('task', 'initial task')
+
+  if subject.length > 0 && n = params['next']
     wfid = ENGINE.launch(
       PDEF,
       'next' => n,
-      'subject' => params['subject'],
+      'subject' => subject,
       'task' => params['task'],
       'last' => Ruote.now_to_utc_s)
   end
@@ -178,7 +186,7 @@ post '/work' do
 
   if params['action'] == 'resume'
     workitem.fields['next'] = params['next']
-    workitem.fields['task'] = params['task']
+    workitem.fields['task'] = parm('task', 'next task')
     workitem.fields['last'] = Ruote.now_to_utc_s
     PART.reply(workitem)
   else # params['action'] == 'terminate'
