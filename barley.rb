@@ -44,7 +44,8 @@ USERS = {
   'torsten' => 'http://www.gravatar.com/avatar/3fa5d7edd1f21da184964146e062c8da?s=48&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-48.png',
   'postmodern' => 'http://a3.twimg.com/profile_images/261097869/postmodern_bigger.jpg',
   'amedeo' => 'http://a1.twimg.com/profile_images/99817242/me_bigger.png',
-  'radlepunktde' => 'http://a1.twimg.com/profile_images/303265014/radlepunktde_bigger.jpg'
+  'radlepunktde' => 'http://a1.twimg.com/profile_images/303265014/radlepunktde_bigger.jpg',
+  'iwashita' => 'http://a1.twimg.com/profile_images/303265014/radlepunktde_bigger.jpg'
 }
 
 
