@@ -5,6 +5,8 @@ Barley is a mini ruote + ruote-dm sample application targetted at Heroku.
 
 It was first described at http://jmettraux.wordpress.com/2010/01/29/barley/
 
+There is one instance of this barley running at http://freezing-stone-20.heroku.com/
+
 
 == license
 
